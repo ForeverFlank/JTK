@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&family=Roboto+Mono&display=swap');
+
+:root {
+    --blue: #5eefff;
+    --black: #000000;
+    --white: #ffffff;
+
+    --blue: #5eefff;
+
+    --blue-bg: #13303380;
+    --white-bg: #33333380
+}
+
+* {
+    font-family: 'Anek Gurmukhi', sans-serif;
+    color: var(--white);
+    margin: 0;
+    line-height: 1.2em;
+}
+
+.monospace {
+    font-family: 'Roboto Mono', monospace;
+}
+
+button {
+    border-radius: 0;
+}
+
+body {
+    margin: auto;
+    width: 30em;
+    padding: 8vh 6vw;
+}
+
+hr {
+    margin-bottom: 16px;
+}
+
+/*
+div {
+    padding: 10px 0 10px 15px;
+}
+*/
+
+.margin {
+    margin-bottom: 16px;
+}
+
+.container {
+    margin-bottom: 15px;
+    padding: 15px 15px 10px 15px;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 8px 0 0 0;
+}
+
+h2 {
+    padding: 5px 0 0 0;
+}
+
+hr {
+    background-color: var(--white);
+    height: 2px;
+    border: none;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+}
+
+.header-menu p {
+    background-color: none;
+    vertical-align: middle;
+}
+
+.header-submenu {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0;
+}
+
+.header-submenu button {
+    height: 44.2px;
+}
+
+.blue h1,
+.blue h2,
+.blue p {
+    color: var(--blue);
+}
+
+.blue {
+    background-color: var(--blue-bg);
+    box-shadow: -4px 0 var(--blue);
+}
+
+.white {
+    background-color: var(--white-bg);
+    box-shadow: -4px 0 var(--white);
+}
+
+.red {
+    color: rgb(224, 66, 66);
+}
+
+.blue-button {
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    background-color: transparent;
+    padding: 4px 8px 0 8px;
+    font-size: medium;
+    transition: 200ms;
+    height: 35px;
+}
+
+.blue-button:hover {
+    background-color: var(--blue);
+    color: var(--black);
+}
+
+.blue-button:active {
+    background-color: var(--black);
+    color: var(--blue);
+    transition: none;
+}
+
+.white-button {
+    color: var(--white);
+    border: 2px solid var(--white);
+    background-color: transparent;
+    padding: 4px 8px 0 8px;
+    font-size: medium;
+    transition: 200ms;
+    height: 35px;
+}
+
+.white-button:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.white-button:active {
+    background-color: var(--black);
+    color: var(--white);
+    transition: none;
+}
+
+.blue-text {
+    color: var(--blue);
+    background-color: transparent;
+    border: 2px solid var(--blue);
+    padding: 4px 4px 0 8px;
+    font-size: medium;
+    height: 27.8px;
+    transition: 200ms;
+    caret-color: var(--black);
+}
+
+.blue-text:focus {
+    color: var(--black);
+    background-color: var(--blue);
+    outline: none;
+}
+
+.white-text {
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid var(--white);
+    padding: 4px 4px 0 8px;
+    font-size: medium;
+    height: 27px;
+    transition: 200ms;
+    caret-color: var(--black);
+    margin-bottom: 4px;
+}
+
+.white-text:focus {
+    color: var(--black);
+    background-color: var(--white);
+    outline: none;
+    
+}
+
+.blue-slider {
+    -webkit-appearance: none;
+    position: absolute;
+    overflow: hidden;
+    margin-left: 4px;
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    box-shadow: 0 0 0 1px var(--blue) inset;
+    height: 33px;
+    transition: 200ms;
+}
+
+.blue-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0px;
+    height: 25px;
+    cursor: ew-resize;
+    background: none;
+    box-shadow: -2000px 0 0 2000px var(--blue);
+}
+
+.short {
+    padding-top: 5px;
+    padding-left: 3px;
+    height: 14px
+}

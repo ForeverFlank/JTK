@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <title>Title</title>
+    </head>
+  
+    <body style="background-color: #000c0c">
+        <header>
+            <div class="header-menu">
+                <div class="header-submenu">
+                    <div class="container blue">
+                        <p>JTK \ Randomizer</p>
+                    </div>
+                    <button class="blue-button" onclick="window.location.href = 'index.html';">Home</button>
+                </div>
+                <div></div>
+            </div>
+            <hr>
+            <div class="container blue">
+                <h1>Randomizer
+                </h1>
+            </div>
+        </header>
+        <article>
+            <div class="container white">
+                <p>This Randomizer tool will gives you an integer between 2 numbers.<br><br></p>
+                <div style="display: flex; justify-content: stretch; padding-right: 30px;">
+                    <div style="width: 100%;">
+                        <p>Mininum Value</p>
+                        <input type="text" value="1" class="white-text short" style="width: 7em;" id="fmin" onchange="minimum()">
+                    </div>
+                    <div style="width: 100%;">
+                        <p>Maximum Value</p>
+                        <input type="text" value="10" class="white-text short" style="width: 7em;" id="fmax" onchange="maximum()">
+                    </div>
+                </div>
+            </div>
+            <button class="white-button margin" style="width: 100%;" onclick="generate()">Generate</button>
+            <hr>
+            <p style="text-align: center; font-size: x-large;">The result is</p>
+            <p style="text-align: center; font-size: 6em; margin-top: -10px;" id="result" class="monospace">-</p>
+            </div>
+        </article>
+        
+        <script>
+            var min = 1;
+            var max = 10;
+            function minimum() {
+                const x = document.getElementById("fmin");
+                min = parseInt(x.value);
+            }
+            function maximum() {
+                const x = document.getElementById("fmax");
+                max = parseInt(x.value);
+            }
+            function generate() {
+                console.log("clicked");
+                const x = document.getElementById("result");
+                var y = Math.random() * (max-min+1) + min;
+                y = Math.floor(y);
+                x.innerHTML = y;
+            }
+        </script>
+
+        <footer>
+        </footer>
+    </body>
+</html>
